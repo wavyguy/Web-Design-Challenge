@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Load Before Coding -->. -->
+  <meta charset="UTF-8">
+<!-- Title -->
+  <title>Latitude Analysis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS -->
+  <link rel="stylesheet" href="reset.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" 
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+     <!-- JQUERY -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-blue">
+        <a class="nav-link" href="https://wavyguy.github.io/Web-Design-Challenge/index.html"> 
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"> </span>
+            </button>
+        </a>
+        <ul class="navbar-nav">
+            <!-- Home button -->
+            <li class="nav-item active">
+                <a class="nav-link" href="https://wavyguy.github.io/Web-Design-Challenge/index.html">  
+                Weather and Latitude</a>
+            </li>
+        </ul>
+
+        <!-- right side of navbar -->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown ml-auto">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" href="#" role="button" 
+                aria-haspopup="true" aria-expanded="false">Plot</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="https://wavyguy.github.io/Web-Design-Challenge/Temperature vs Latitude.html">Temperature</a>
+                    <a class="dropdown-item" href="https://wavyguy.github.io/Web-Design-Challenge/Humidity vs Latitude.html">Humidity</a>
+                    <a class="dropdown-item" href="https://wavyguy.github.io/Web-Design-Challenge/Cloudiness vs Latitude.html">Cloudiness</a>
+                    <a class="dropdown-item" href="https://wavyguy.github.io/Web-Design-Challenge/Windiness vs Latitude.html">Wind Speed </a>
+                </div>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link" href="https://wavyguy.github.io/Web-Design-Challenge/Comparison_Page.html">Comparison
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://wavyguy.github.io/Web-Design-Challenge/Data_Page.html">Data</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Body -->
+      <div style="background-color:rgb(218, 60, 32);">
+        <div class="row">
+            <div class="col-md-12">
+                </br>
+                </br> <!-- Line Break -->
+            </div>
+        </div>
+      </div> <!-- Background Color -->
+        <!-- Header -->
+    <div class = 'container-fluid'>
+        <div class="row align-items-center">
+            <div class = 'col-md-4'></div>
+            <div class="col-lg-4">
+                <h1 class="intro">Project Summary</h1>
+            </div>
+            <div class = 'col-md-4'> </br> </br> </div>
+        </div>
+        <!-- Line Breaks -->
+        <div class="row">
+            <div class="col-md-12">
+                </br> 
+                </br>
+            </div>
+        </div>
+
+        <!-- Main -->
+        <div class="row align-items-center">
+            <!-- Summary -->
+            <div class="col-lg-6">
+                <p>For this assignment, we analyzed weather trends based on 
+                distance to the equator. We used Python to visualize the weather of over 500 cities 
+                across the world, studying the distance from the equator and the effect on the weather in 
+                that given city.
+                </br>
+                </br>
+                Besides the simple Python library, we utilized the OpenWeatherMap API and a little 
+                common sense to create a representative model of weather across world cities.
+                Hope you enjoy this web design of our project!
+                </br>
+                </p>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Visualizations -->
+        <!-- Header -->
+    <div id = "bottom_visual" class="container"> 
+        <div class="row">
+            <div class="col-md-12">
+                </br> <!-- Break -->
+            </div>
+        </div>
+        <hr> 
+
+        <!-- Header Content -->
+        <div class="row align-items-center">
+            <div class = 'col-md-4'></br></br></br></div>
+            <div class="col-lg-4">
+                <h3 id="bot_header">Graphic Visualizations</h3>
+            </div>
+            <div class = 'col-md-4'></br></br></br></div>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-lg-3">
+                <a href="Temperature vs Latitude.html">
+                    <img class="mx-auto d-block img-fluid" src="Resources/assets%20(images)/City%20Latitude%20vs.%20Max%20Temp.png"
+                    alt = "Maximum Temperature vs. Latitude" height="225" width="300">
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a href="Humidity vs Latitude.html">
+                    <img class="mx-auto d-block img-fluid" src="Resources/assets%20(images)/City%20Latitude%20vs.%20Humidity.png"
+                    alt = "Humidity vs. Latitude" height="225" width="300">
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a href="Cloudiness vs Latitude.html">
+                    <img class="mx-auto d-block img-fluid" src="Resources/assets%20(images)/City%20Latitude%20vs.%20Cloudiness.png"
+                    alt = "Cloudiness vs. Latitude" height="225" width="300">
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a href="Windiness vs Latitude.html">
+                    <img class="mx-auto d-block img-fluid" src="Resources/assets%20(images)/City%20Latitude%20vs.%20Wind%20Speed.png"
+                    alt = "Windspeed vs. Latitude" height="225" width="300">
+                </a>
+            </div>
+        </div>
+    
+        <hr>
+    </div>
+</body>
+</html>
