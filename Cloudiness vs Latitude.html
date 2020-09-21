@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+<!-- Title -->
+  <title>Cloudiness vs Latitude</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS -->
+  <link rel="stylesheet" href="reset.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" 
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-sm navbar-blue">
+    <a class="nav-link" href="index.html">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+    </a>
+    <ul class="navbar-nav">
+        <!-- Home button -->
+        <li class="nav-item active">
+            <a class="nav-link" href="index.html">  
+        </li>
+    </ul>
+
+    <!-- Navbar (Right Side) -->
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown ml-auto">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" href="#" role="button" 
+            aria-haspopup="true" aria-expanded="false">Plot</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="Temperature vs Latitude.html">Temperature</a>
+                <a class="dropdown-item" href="Humidity vs Latitude.html">Humidity</a>
+                <a class="dropdown-item" href="Cloudiness vs Latitude.html">Cloudiness</a>
+                <a class="dropdown-item" href="Wind Speed vs Latitude.html">Wind Speed </a>
+            </div>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="Comparison_Page.html">Comparison
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Data_Page.html">Data</a>
+        </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div style="background-color:rgb(218, 215, 32);">
+    <div class='row'>
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+            </br>
+            </br>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+  </div>
+
+    <!-- Header -->
+<div class="container-fluid">
+    <div class='row align-items-center'>
+        <div class="col-md-4">
+            </br>
+            </br>
+        </div>
+        <div class="col-lg-4">
+            <h1 class="intro">Cloudiness vs Latitude</h1>
+            </br>
+            </br>
+        </div>
+        <div class="col-md-4">
+            </br>
+            </br>
+        </div>
+    </div> 
+    
+    <div class="row">
+        <div class="col-lg-6">
+            </br>
+            <a target="_blank" href="Resources/assets%20(images)/City%20Latitude%20vs.%20Cloudiness.png">
+                <img src="Resources/assets%20(images)/City%20Latitude%20vs.%20Cloudiness.png"
+                alt = "Cloudiness vs. Latitude" height="600" width="800">
+            </a>
+        </div>
+        <div class="col-lg-6">
+            <p class="description">There is no strong relationship between latitude and cloudiness. 
+                  However, it is interesting to see that a strong groups of cities at 0, 80, and 100% cloudiness. 
+                  You can see how the cities cluster around areas of high and low cloudiness.
+            </br></br>
+            </p>
+        </div>
+    </div>
+</div> 
+
+    <!-- Visualizations -->
+        <!-- Header -->
+    <div id = "bottom_visual_page" class="container"> 
+          <div class="row">
+              <div class="col-md-12">
+                  </br> 
+              </div>
+          </div>
+          <hr> 
+
+          <!-- Visualizations (Header) -->
+        <div id = "bottom_visual_page" class="container"> 
+          <div class="row align-items-center">
+              <div class = 'col-md-4'></br></br></br></div>
+              <div class="col-lg-4">
+                  <h3 id="bot_header">Graphic Visualizations</h3>
+              </div>
+              <div class = 'col-md-4'></br></br></br></div>
+          </div>
+  
+          <div class="row align-items-center">
+            <div class="col-lg-3">
+                <a href="Temperature vs Latitude.html">
+                    <img src="Resources/assets%20(images)/City%20Latitude%20vs.%20Max%20Temp.png"
+                    alt = "Max Temperature vs. Latitude" height="225" width="300">
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a href="Humidity vs Latitude.html">
+                    <img src="Resources/assets%20(images)/City%20Latitude%20vs.%20Humidity.png"
+                    alt = "Humidity vs. Latitude" height="225" width="300">
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a href="Cloudiness vs Latitude.html">
+                    <img src="Resources/assets%20(images)/City%20Latitude%20vs.%20Cloudiness.png"
+                    alt = "Cloudiness vs. Latitude" height="225" width="300">
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a href="Wind Speed vs Latitude.html">
+                    <img src="Resources/assets%20(images)/City%20Latitude%20vs.%20Wind%20Speed.png"
+                    alt = "Windspeed vs. Latitude" height="225" width="300">
+                </a>
+            </div>
+        </div>
+        <hr>
+      </div>
+  
+
+
+</body>
+</html>
