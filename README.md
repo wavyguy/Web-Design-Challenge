@@ -1,3 +1,6 @@
+Link to Website: https://wavyguy.github.io/Web-Design-Challenge/index.html
+
+
 # Web Design Homework - Web Visualization Dashboard (Latitude)
 
 ## Background
